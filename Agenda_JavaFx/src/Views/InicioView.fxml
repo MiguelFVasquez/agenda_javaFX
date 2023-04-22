@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="334.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.InicioController">
+   <children>
+      <Label layoutX="132.0" layoutY="14.0" text="Bienvenido/a" />
+      <Label layoutX="107.0" layoutY="41.0" text="¿Qué desea gestionar?" />
+      <Button fx:id="btnCerrrar" layoutX="141.0" layoutY="401.0" mnemonicParsing="false" onAction="#cerrarInicio" prefHeight="25.0" prefWidth="58.0" text="Cerrar" />
+      <Button fx:id="btnContacto" layoutX="132.0" layoutY="127.0" mnemonicParsing="false" onAction="#abrirContactos" text="Contactos" />
+      <Button fx:id="btnGrupo" layoutX="140.0" layoutY="199.0" mnemonicParsing="false" onAction="#abrirGrupos" text="Grupos" />
+      <Button fx:id="btnReunion" layoutX="131.0" layoutY="279.0" mnemonicParsing="false" onAction="#abrirReuniones" text="Reuniones" />
+   </children>
+</AnchorPane>

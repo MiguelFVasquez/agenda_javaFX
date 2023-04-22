@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="489.0" prefWidth="584.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.GrupoController">
+   <children>
+      <TabPane layoutX="6.0" layoutY="8.0" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <tabs>
+            <Tab text="Gestion Grupos">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="14.0" text="Información del Grupo">
+                           <font>
+                              <Font name="Baskerville Old Face" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="63.0" layoutY="57.0" text="Nombre" />
+                        <Label layoutX="59.0" layoutY="97.0" text="Categoria" />
+                        <TextField fx:id="txtNombreGrupo" layoutX="250.0" layoutY="53.0" prefHeight="25.0" prefWidth="301.0" />
+                        <Separator layoutX="8.0" layoutY="40.0" prefHeight="0.0" prefWidth="561.0" />
+                        <Button fx:id="btnNuevoGrupo" layoutX="272.0" layoutY="158.0" mnemonicParsing="false" onAction="#crearGrupo" text="Agregar" />
+                        <Button fx:id="btnVolver" layoutX="276.0" layoutY="421.0" mnemonicParsing="false" onAction="#showVentanaPrincipal" text="Volver" />
+                        <Button fx:id="btnBuscarContacto" layoutX="402.0" layoutY="158.0" mnemonicParsing="false" onAction="#buscarGrupo" prefHeight="25.0" prefWidth="59.0" text="Buscar" />
+                        <ComboBox fx:id="comboBoxCategoria" layoutX="251.0" layoutY="93.0" prefHeight="25.0" prefWidth="301.0" />
+                        <TableView fx:id="tableViewGrupos" layoutX="11.0" layoutY="206.0" prefHeight="200.0" prefWidth="477.0">
+                          <columns>
+                            <TableColumn fx:id="columNombreGrupo" prefWidth="75.0" text="Nombre" />
+                            <TableColumn fx:id="columCategoria" prefWidth="75.0" text="Categoria" />
+                          </columns>
+                        </TableView>
+                        <Separator layoutX="11.0" layoutY="193.0" prefHeight="1.0" prefWidth="560.0" />
+                        <Button fx:id="btnLimpiar" layoutX="140.0" layoutY="158.0" mnemonicParsing="false" onAction="#limpiarCampos" text="Limpiar" />
+                        <Button fx:id="btnEliminar" layoutX="512.0" layoutY="275.0" mnemonicParsing="false" onAction="#eliminarGrupo" text="Eliminar" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
